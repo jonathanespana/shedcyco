@@ -5,23 +5,23 @@
   <div class="row">
     <div class="col-xs-12 col-sm-7 item-img-col">
       <div class="item-img-container">
-        <img src="https://i.ibb.co/LrKgP7g/IMG-8488.jpg" alt="">
+        <img src="{{ item.main_image }}" alt="">
       </div>
     </div>
     <div class="col-xs-12 col-sm-5 item-detail-col">
       <div class="item-info">
-        <h2>Chinese Take-Out Tee - White</h2>
-        <p>$25.00</p>
+        <h2>{{ item.name }}</h2>
+        <p>${{ item.price }}</p>
         <p>Description</p>
         <ul>
-          <li>"Chinese Take-Out" Logo by P. Rhogar</li>
-          <li>Front and Back Logos</li>
-          <li>Screenprinted</li>
-          <li>Relaxed Fit</li>
-          <li>100% Medium Weight Jersey</li>
-          <li>Made in Salt Lake City, UT (USA)</li>
+          <li>Designed by {{ item.designer }}</li>
+          <li>{{ item.logos }}</li>
+          <li>{{ item.method }}</li>
+          <li>{{ item.style }}</li>
+          <li>{{ item.material }}</li>
+          <li>Made in {{ item.origin}}</li>
         </ul>
-        <p>Color: White</p>
+        <p>Color: {{ item.color }}</p>
         <a href="#" class="btn btn-success">Add to Cart</a>
       </div>
     </div>

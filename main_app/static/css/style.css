@@ -93,6 +93,14 @@ body {
   margin: 0;
 }
 
+a .card-title {
+  color: #191919;
+}
+
+a .card-body {
+  color: #191919;
+}
+
 /* === Shop/Store === */
 
 .shop-header {
@@ -121,4 +129,8 @@ body {
 /* Item Detail */
 .item-detail-col{
   margin: 24px 0px;
+}
+
+a {
+  text-decoration: none;
 }

@@ -23,33 +23,19 @@
   
   <div class="container">
     <div class="row item-row">
+      {% for ft_item in ft_items %}
       <div class="item-container col-xs-12 col-sm-6 col-md-4">
-        <div class="card" style="width: 18rem;">
-          <img src="https://i.ibb.co/LrKgP7g/IMG-8488.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Chinese Take-Out L/S Tee</h5>
-            <p class="card-text">$25.00</p>
+        <a href="{% url 'item_detail' ft_item.id %}">
+          <div class="card" style="width: 18rem;">
+            <img src="{{ ft_item.main_image }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ ft_item.name }}</h5>
+              <p class="card-text">${{ ft_item.price }}</p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
-      <div class="item-container col-xs-12 col-sm-6 col-md-4">
-        <div class="card" style="width: 18rem;">
-          <img src="https://i.ibb.co/19pDLgc/IMG-8497.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Pray For Me L/S Tee</h5>
-            <p class="card-text">$25.00</p>
-          </div>
-        </div>
-      </div>
-      <div class="item-container col-xs-12 col-sm-6 col-md-4">
-        <div class="card" style="width: 18rem;">
-          <img src="https://i.ibb.co/QHmfb7n/IMG-8492.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Roadkill S/S Tee</h5>
-            <p class="card-text">$25.00</p>
-          </div>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </div>
