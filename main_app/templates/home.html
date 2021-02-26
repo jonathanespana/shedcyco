@@ -1,32 +1,56 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="container-fluid img-grid">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-6">
+    <div class="col-xs-12 col-sm-6 img-grid">
       <div class="landing-img-container">
-        <img src="https://i.ibb.co/w4h76Sf/shedrun-tina1.jpg" class="d-block w-100" alt="...">
+        <img class="landing-img" src="https://i.ibb.co/wNT9QVj/shedrun-tina.jpg" alt="...">
       </div>
     </div>
-    <div class="col-6">
+    <div class="col-xs-0 col-sm-6 img-grid">
       <div class="landing-img-container">
-        <img src="https://i.ibb.co/wNT9QVj/shedrun-tina.jpg" class="d-block w-100" alt="...">
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-6">
-      <div class="landing-img-container">
-        <img src="https://i.ibb.co/jzypQL3/shedrun-caps.jpg" class="d-block w-100" alt="...">
-      </div>
-    </div>
-    <div class="col-6">
-      <div class="landing-img-container">
-        <img src="https://i.ibb.co/z5kSfJ0/shedrun-betty1.jpg" class="d-block w-100" alt="...">
+        <img class="landing-img" src="https://i.ibb.co/jzypQL3/shedrun-caps.jpg" alt="...">
       </div>
     </div>
   </div>
 </div>
 
-
+<div class="container-fluid">
+  <div class="ft-header-container">
+    <h2 class="ft-header">FEATURED PRODUCTS</h1>
+  </div>
+  
+  <div class="container">
+    <div class="row item-row">
+      <div class="item-container col-xs-12 col-sm-6 col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="https://i.ibb.co/LrKgP7g/IMG-8488.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Chinese Take-Out L/S Tee</h5>
+            <p class="card-text">$25.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="item-container col-xs-12 col-sm-6 col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="https://i.ibb.co/19pDLgc/IMG-8497.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Pray For Me L/S Tee</h5>
+            <p class="card-text">$25.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="item-container col-xs-12 col-sm-6 col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="https://i.ibb.co/QHmfb7n/IMG-8492.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Roadkill S/S Tee</h5>
+            <p class="card-text">$25.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}
