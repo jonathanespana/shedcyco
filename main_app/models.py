@@ -19,5 +19,5 @@ class Item(models.Model):
   material = models.CharField(max_length=100)
   origin = models.CharField(max_length=100)
   color = models.CharField(max_length=50)
-  featured = models.BooleanField(default=false)
+  featured = models.BooleanField(default=False)
   category = models.CharField(max_length=1, choices=CATEGORIES, default=CATEGORIES[0][0])
